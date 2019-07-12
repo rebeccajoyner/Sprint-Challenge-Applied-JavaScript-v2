@@ -7,7 +7,7 @@
 //    <h1>Lambda Times</h1>
 //    <span class="temp">98°</span>
 //  </div >
-// And add it to the DOM in the .headerContainer component
+// And add it to the DOM in the .header-container component
 
 function createHeader() {
 
@@ -26,12 +26,6 @@ function createHeader() {
     const temp = document.createElement('span');
     temp.classList.add('temp');
     temp.textContent = `${tempurature}`;
-
-    
-
-    header.append(title);
-    header.append(date);
-    header.append(temp);
 
     return header;
 };

@@ -17,3 +17,28 @@
 // </div>
 //
 // Create a card for each of the articles and add the card to the DOM.
+
+
+
+const article = document.querySelector('.article')
+
+
+axios.get('https://lambda-times-backend.herokuapp.com/articles')
+    .then(response => response.data)
+        .then(cards => {
+        artiles.forEach(card => {
+            const card = createCard(response.data);
+            cards.appendChild(card)
+        });
+    });
+    
+
+
+
+
+
+    
+
+
+
+
